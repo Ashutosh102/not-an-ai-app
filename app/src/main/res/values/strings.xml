@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Macro Recorder</string>
+    <string name="accessibility_service_label">Macro Recorder Automation Service</string>
+    <string name="accessibility_service_description">Enables macro recording by capturing structural node IDs, package names, and labels, and automated replay using gesture dispatch and text injection without AI.</string>
+    <string name="notification_channel_record_name">Screen Recording Service</string>
+    <string name="notification_channel_record_desc">Active recording indicator for screen capture and workflow tracking</string>
+</resources>

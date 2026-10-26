@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/overlay_background"
+    android:elevation="8dp"
+    android:paddingStart="8dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="6dp"
+    android:gravity="center_vertical">
+
+    <!-- Drag Handle / App Icon -->
+    <ImageView
+        android:id="@+id/btn_drag_handle"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_drag_indicator"
+        android:contentDescription="Drag overlay"
+        android:layout_marginEnd="6dp" />
+
+    <!-- Status Badge -->
+    <TextView
+        android:id="@+id/tv_overlay_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDLE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/badge_idle"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Record / Stop Button -->
+    <ImageView
+        android:id="@+id/btn_overlay_record"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_record"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Record Macro"
+        android:layout_marginEnd="6dp" />
+
+    <!-- Replay Button -->
+    <ImageView
+        android:id="@+id/btn_overlay_replay"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_play"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Replay Macro"
+        android:layout_marginEnd="6dp" />
+
+    <!-- Close / Dismiss Overlay -->
+    <ImageView
+        android:id="@+id/btn_overlay_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_close"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Close Overlay" />
+
+</LinearLayout>
